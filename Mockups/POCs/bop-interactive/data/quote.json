@@ -1,0 +1,12 @@
+{
+  "LiabilityLimitPerOccurrence": "$1,000,000",
+  "LiabilityLimitAggregate": "$2,000,000",
+  "BusinessAndPersonalPropertyLimit": "$70,000",
+  "PropertyDeductible": "$2,500",
+  "BuildingCoverage": "Excluded",
+  "Premium": "$1,416",
+  "PolicyTerm": {
+      "StartDate": "August 1, 2018",
+      "EndDate": "July 31,2019"
+    }
+}

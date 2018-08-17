@@ -1,0 +1,103 @@
+﻿risk ID,street addr,City,state,zip c,PARCEL_MATCH,MISSING_BUILDING,PX_CONST,PX_SQ_FT,PX_NO_FLOORS,PX_RHP_OCCUPANCY,PX_CSP_DETAIL,PX_Risk_Count
+09FL99172761,13550 REFLECTIONS PKWY,FT MYERS,FL,33907,Yes,No,Joisted Masonry,6000,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+420001157011,1331 N 1 ST,BELLAIRE,TX,77401,Yes,Yes,Masonry Non-Combustible,20500,1,"Mercantile > 15,000 square feet","Sole Occupancy Mercantile, Over 15,000 Square Feet, Food Risks, Buildings and Personal Property",Single
+42TX99012137,9788 BELLAIRE BLVD,HOUSTON,TX,77036,Yes,No,Frame,12390,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+09FL99159928,1210 E PLANT ST,WINTER GARDEN,FL,34787,Yes,No,Masonry Non-Combustible,21000,1,Office and banks,Non-Governmental Offices and Banks,Single
+42TX66004502,8403 LOUETTA RD,HARRIS,TX,77379,Yes,No,Frame,5200,1,Non-Manufacturing service,Light Hazard Service Occupancies,Single
+290162005941,71 CROOKS AVE,CLIFTON,NJ,7011,Yes,Yes,Masonry Non-Combustible,300,1,"Mercantile < 15,000 square feet","Electrical Goods, Hardware and Machinery",Single
+20MA99008383,392 WASHINGTON ST,NORWELL,MA,2061,No,No,Joisted Masonry,8500,1,"Mercantile < 15,000 square feet",Furniture and Home Furnishings other than Appliances,Single
+42TX99818816,279 E OVILLA RD,RED OAK,TX,75154,Yes,No,Frame,4050,1,Restaurant and Bar,Restaurants with Commercial Cooking,Single
+19MD99014519,1055 1 ST,MONTGOMERY,MD,20850,Yes,No,Masonry Non-Combustible,35200,2,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99507321,9009 BRUTON RD,DALLAS,TX,75217,No,No,Non-Combustible,2400,1,Non-Manufacturing service,Light Hazard Service Occupancies,Single
+01AL99026021,654 DISCOVERY DR NW,HUNTSVILLE,AL ,35806,Yes,No,Non-Combustible,54100,2,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99486573,11030 KINGSPOINT RD,HOUSTON,TX,77075,Yes,No,Non-Combustible,38388,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+29NJ99025124,180 N COUNTY LINE RD,JACKSON,NJ,8527,Yes,No,Frame,22647,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99536503,6900 DALLAS PKWY,PLANO,TX,75024,Yes,Yes,Fire Resistive,208264,8,Office and banks,Non-Governmental Offices and Banks,Single
+42TX99518122,15201 EAST FWY,CHANNELVIEW,TX,77530,Yes,Yes,Non-Combustible,68746,2,Office and banks,Non-Governmental Offices and Banks,Single
+45VA66011598,4050 COX RD,HENRICO,VA,23060,Yes,No,Frame,92208,6,Hotel & Motel w/out Restaurant,Motels and Hotels without Restaurant - Over 30 Units,Single
+290026046236,216 MIDLAND AVE,SADDLE BROOK,NJ,7663,Yes,No,Masonry Non-Combustible,42052,1,"Mercantile > 15,000 square feet","Sole Occupancy Mercantile, Over 15,000 Square Feet, Food Risks, Buildings and Personal Property",Single
+42TX66003563,7017 BAKER BLVD,RICHLAND HILLS,TX,76118,Yes,No,Masonry Non-Combustible,14072,1,Vacant,Vacant Buildings,Single
+29NJ99019694,291 US HIGHWAY 22,LEBANON,NJ,8833,Yes,No,Joisted Masonry,7800,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99534678,8802 POTRANCO RD,SAN ANTONIO,TX,78251,No,No,Masonry Non-Combustible,20384,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+450196040070,1601 OVERBROOK RD,RICHMOND,VA,23220,No,Yes,Joisted Masonry,52306,2,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99573169,2208 THOMPSON RD,RICHMOND,TX,77469,Yes,No,Frame,696,1,Office and banks,Non-Governmental Offices and Banks,Single
+42TX66072492,8120 MAINLAND DR,SAN ANTONIO,TX,78240,Yes,No,Frame,2541,1,Office and banks,Non-Governmental Offices and Banks,Single
+42TX66090603,6707 MAYARD RD,HARRIS,TX,77041,Yes,No,#N/A,#N/A,#N/A,#N/A,#N/A,Single
+10GA99053623,1385 COLLIER RD NW,ATLANTA,GA,30318,No,No,Masonry Non-Combustible,13955,1,Vacant,Vacant Buildings,Single
+428888002060,1401 VIRGINIA ST,SOUTH HOUSTON,TX,77587,Yes,No,Non-Combustible,3900,1,Metal Manufacturing,"Metalworking, NOC",Single
+323601114501,10 AIRLINE AVE,BELMONT,NC,28012,Yes,No,Masonry Non-Combustible,14635,1,Metal Manufacturing,"Metalworking, NOC",Multiple
+323601114502,10 AIRLINE AVE,BELMONT,NC,28012,Yes,No,Joisted Masonry,27872,1,Storage,Miscellaneous Products Storage - (other than Retail or Wholesale or Cold Storage),Multiple
+42TX99533449,215 RICHILL DR,TEXARKANA,TX,75503,Yes,No,Frame,42246,3,Hotel & Motel w/out Restaurant,Motels and Hotels without Restaurant - Over 30 Units,Single
+42TX66091795,201 N HEWITT DR,MCLENNAN,TX,76643,No,No,Masonry Non-Combustible,63152,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX66004286,2815 AZLE AVE,FORT WORTH,TX,76106,Yes,No,Masonry Non-Combustible,3200,1,Office and banks,Non-Governmental Offices and Banks,Single
+10GA99017909,700 W MEMORIAL DR,PAULDING,GA,30132,Yes,No,Frame,15238,2,Hospital & Nursing Home,Nursing and Convalescent Homes,Single
+32NC99002145,10015 LEE ST,PINEVILLE,NC,28134,Yes,No,Masonry Non-Combustible,4900,1,Restaurant and Bar,Restaurants with Commercial Cooking,Single
+39SC99023723,3365 S MORGANS POINT RD,MT PLEASANT,SC,29466,Yes,No,Masonry Non-Combustible,3024,1,"Mercantile < 15,000 square feet",Food Products including Retail Bakeries (no baking and no cooking on premises; sales only); Beverages other than Alcoholic,Multiple
+39SC99023727,3365 S MORGANS POINT RD,MT PLEASANT,SC,29466,Yes,No,Masonry Non-Combustible,36443,1,"Mercantile > 15,000 square feet","Sole Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage, Other than Food Risks",Multiple
+39SC99023728,3365 S MORGANS POINT RD,MT PLEASANT,SC,29466,Yes,No,Masonry Non-Combustible,2668,1,Vacant,Vacant Buildings,Multiple
+42TX66100062,106 S CHURCH ST,MCKINNEY,TX,75069,Yes,Yes,Frame,3300,2,Office and banks,Non-Governmental Offices and Banks,Single
+32NC99035524,11416 E INDEPENDENCE BLVD,MATTHEWS,NC,28105,Yes,No,Masonry Non-Combustible,101900,1,Church/House of Worship,Churches and Synagogues,Single
+42TX99498133,17721 ROGERS RANCH PKWY,SAN ANTONIO,TX,78258,Yes,No,Masonry Non-Combustible,27828,2,Office and banks,Non-Governmental Offices and Banks,Single
+90661409398,4301 W BOY SCOUT BLVD,TAMPA,FL,33607,Yes,Yes,Masonry Non-Combustible,3096,1,Office and banks,Non-Governmental Offices and Banks,Single
+39SC99006391,430 SAVANNAH HWY,CHARLESTON,SC,29407,Yes,No,Frame,4902,1,Motor Vehicle/Aircraft Hanger,"Aircraft Hangars with Repairing, Motor Vehicle Repairing Including Auto Body Shops, with or without Sales",Single
+45VA99014630,100 ARAGONA BLVD,VIRGINIA BEACH,VA,23462,Yes,No,#N/A,#N/A,#N/A,#N/A,#N/A,Single
+310209331165,210 E 43 ST,MANHATTAN,NY,10017,Yes,No,Fire Resistive,443000,21,Office and banks,Non-Governmental Offices and Banks,Single
+202032031660,1069 BROADWAY,SAUGUS,MA,1906,Yes,No,Non-Combustible,44816,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+29NJ99004311,252 WAGNER ST,MIDDLESEX,NJ,8846,No,Yes,#N/A,#N/A,#N/A,#N/A,#N/A,Single
+100618319962,1000 ABERNATHY RD NE,FULTON,GA,30328,Yes,No,Fire Resistive,1096663,19,Office and banks,Non-Governmental Offices and Banks,Single
+420001419116,750 ALMEDA GENOA RD,HOUSTON,TX,77047,Yes,No,Masonry Non-Combustible,224094,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+190020142586,5204 ROLAND AVE,BALTIMORE CITY,MD,21210,Yes,Yes,Masonry Non-Combustible,128040,4,School,"Schools, Academic",Multiple
+190020142587,5204 ROLAND AVE,BALTIMORE CITY,MD,21210,Yes,Yes,Masonry Non-Combustible,12600,1,Recreational facility,Halls and Auditoriums,Multiple
+202031053374,141 MIDDLESEX RD,TYNGSBOROUGH,MA,1879,Yes,No,Masonry Non-Combustible,21075,2,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+90668267213,5570 ENTERPRISE PKWY,LEE,FL,33905,Yes,No,Non-Combustible,25517,2,Metal Manufacturing,"Precision Products, Electronic, Radio and Television Manufacturing",Single
+450053004470,428 BATTLEFIELD BLVD N,CHESAPEAKE,VA,23320,Yes,No,Non-Combustible,8600,1,Storage,Miscellaneous Products Storage - (other than Retail or Wholesale or Cold Storage),Single
+31NY99021363,5821 8TH AVE,BROOKLYN,NY,11220,Yes,No,Joisted Masonry,6000,3,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+10GA99036761,1812 W HILL AVE,VALDOSTA,GA,31601,Yes,No,Frame,2976,1,Restaurant and Bar,Restaurants with Commercial Cooking,Single
+42TX99478067,2605 PRESTON RD,FRISCO,TX,75034,Yes,Yes,Masonry Non-Combustible,158152,2,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99558209,8250 AGORA PKWY,SELMA,TX,78154,No,Yes,Non-Combustible,9198,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+31NY66019767,6752 5TH AVE,BROOKLYN,NY,11220,Yes,No,Joisted Masonry,8600,3,Apartment/Condominium,Apartments with Mercantile Occupancies - Up to 10 Units,Single
+100031172350,2285 PEACHTREE RD NE,ATLANTA,GA,30309,Yes,Yes,Fire Resistive,103380,12,Apartment/Condominium,Apartments with Mercantile Occupancies - Over 30 Units,Single
+100203018600,2190 COFFEE RD,DEKALB,GA,30058,Yes,No,Non-Combustible,24960,1,Motor Vehicle/Aircraft Hanger,"Aircraft Hangars with Repairing, Motor Vehicle Repairing Including Auto Body Shops, with or without Sales",Single
+39SC99002240,9600 N KINGS HWY,HORRY,SC,29572,No,Yes,Non-Combustible,17275,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+10465008240,2009 BOB WALLACE AVE SW,HUNTSVILLE,AL ,35805,Yes,No,Masonry Non-Combustible,11233,1,Motor Vehicle/Aircraft Hanger,"Auto Parking Garages, Car Washes",Single
+29NJ99027340,311 RARITAN AVE,HIGHLAND PARK,NJ,8904,Yes,No,Frame,3656,2,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+31NY66021323,663 VANDERBILT AVE,BROOKLYN,NY,11238,No,No,Joisted Masonry,2752,3,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+420001781158,1491 W SOUTH LOOP,STEPHENVILLE,TX,76401,Yes,No,Masonry Non-Combustible,41400,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+29NJ99000288,460 MILLTOWN RD,BRIDGEWATER,NJ,8807,Yes,No,Non-Combustible,43905,2,"Mercantile > 15,000 square feet","Sole Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage, Other than Food Risks",Single
+100031389156,1230 PEACHTREE ST NE,ATLANTA,GA,30309,Yes,Yes,Fire Resistive,964964,40,Office and banks,Non-Governmental Offices and Banks,Single
+10GA99043466,50 SYLVESTER C FORMEY DR,SAVANNAH,GA,31408,Yes,No,Frame,68700,4,Hotel & Motel w/out Restaurant,Motels and Hotels without Restaurant - Over 30 Units,Single
+31NY99019085,834 62ND ST,BROOKLYN,NY,11220,Yes,No,Joisted Masonry,5866,1,Restaurant and Bar,Restaurants with Commercial Cooking,Single
+10GA66001569,12905 HIGHWAY 9 N,ALPHARETTA,GA,30004,Yes,No,Masonry Non-Combustible,10000,1,Motor Vehicle/Aircraft Hanger,"Auto Parking Garages, Car Washes",Single
+09FL99230086,1001 36 ST,W PALM BEACH,FL,33407,Yes,No,#N/A,#N/A,#N/A,#N/A,#N/A,Single
+10GA99386801,851 HICKORY FLAT HWY,CHEROKEE,GA,30115,No,No,Masonry Non-Combustible,100704,1,Metal Manufacturing,"Metalworking, NOC",Single
+09FL99181239,110 SE 6TH ST,FORT LAUDERDALE,FL,33301,Yes,No,Modified Fire Resistive,815646,30,Motor Vehicle/Aircraft Hanger,"Auto Parking Garages, Car Washes",Single
+31NY99010087,135 GARDNER AVE,BROOKLYN,NY,11237,No,Yes,Masonry Non-Combustible,24700,1,Storage,Miscellaneous Products Storage - (other than Retail or Wholesale or Cold Storage),Single
+09FL99234324,700 STARKEY RD,LARGO,FL,33771,No,No,Fire Resistive,69315,6,Apartment/Condominium,Residential Condominiums without Mercantile Occupancies - Over 30 Units,Single
+10GA99034473,4970 COWAN RD,COBB,GA,30101,Yes,No,Frame,14334,2,Hotel & Motel w/out Restaurant,Motels and Hotels without Restaurant - 10 to 30 Units,Single
+42TX99520191,5275 BARKER CYPRESS RD,HARRIS,TX,77084,Yes,No,Non-Combustible,19950,1,Wood Manufacturing,"Furniture and Other Wood Products, NOC",Single
+190020046950,6000 EASTERN AVE,BALTIMORE CITY,MD,21224,Yes,No,Joisted Masonry,4920,2,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+190020130460,1 E PRATT ST,BALTIMORE CITY,MD,21202,Yes,No,Non-Combustible,411788,11,Office and banks,Non-Governmental Offices and Banks,Single
+45VA99146691,3483 VIRGINIA AVE,HENRY,VA,24078,No,Yes,Joisted Masonry,48884,3,Wood Manufacturing,"Furniture and Other Wood Products, NOC",Single
+10GA66006743,3590 CHEROKEE ST NW,COBB,GA,30144,No,Yes,Frame,12096,3,Office and banks,Non-Governmental Offices and Banks,Single
+09FL99226607,250 NE 3 AVE,DELRAY BEACH,FL,33444,No,No,Fire Resistive,134720,5,Apartment/Condominium,Residential Condominiums without Mercantile Occupancies - Over 30 Units,Single
+390400366253,1333 MAIN ST,COLUMBIA,SC,29201,Yes,No,Fire Resistive,209900,8,Office and banks,Non-Governmental Offices and Banks,Single
+42TX99530312,1311 WELLBORN RD,COLLEGE STATION,TX,77840,Yes,No,Non-Combustible,6000,1,School,"Schools, Academic",Single
+10GA99386799,4680 N ROYAL ATLANTA DR,DEKALB,GA,30084,No,No,Masonry Non-Combustible,4500,1,"Mercantile < 15,000 square feet","Risks Having Moderate Susceptibility Personal Property, NOC",Single
+29NJ66018985,130 BLACK HORSE PIKE,HADDON,NJ,8106,No,Yes,Masonry Non-Combustible,10000,1,"Mercantile < 15,000 square feet","Risks Having Moderate Susceptibility Personal Property, NOC",Single
+29NJ99019125,202 CARNEGIE CTR,W WINDSOR,NJ,8540,Yes,No,Masonry Non-Combustible,130486,3,Office and banks,Non-Governmental Offices and Banks,Single
+09FL99224816,1625 S CONGRESS AVE,DELRAY BEACH,FL,33445,Yes,No,Non-Combustible,82193,4,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+450238006425,116 S INDEPENDENCE BLVD,VIRGINIA BEACH,VA,23462,Yes,No,Non-Combustible,35100,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+42TX99551445,107 YALE ST,HOUSTON,TX,77007,Yes,0,Non-Combustible,13869,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+100111408866,291 N INDUSTRIAL WAY,CANTON,GA,30115,Yes,No,Non-Combustible,72988,1,Other Manufacturing,Paper and Paper Products Processing,Single
+42TX99498913,1300 BROADWAY ST,PEARLAND,TX,77581,Yes,No,Frame,5162,1,Restaurant and Bar,Restaurants with Commercial Cooking,Single
+10GA99051108,1942 ATKINSON RD,GWINNETT,GA,30043,Yes,No,Non-Combustible,20024,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+290026030997,50 KENNY PL,SADDLE BROOK,NJ,7663,Yes,No,Modified Fire Resistive,112454,12,Hotel & Motel w/Restaurant,Motels and Hotels with Restaurant - Over 30 Units,Single
+42TX99820152,1301 E HENDERSON ST,CLEBURNE,TX,76031,Yes,No,Non-Combustible,7230,1,Motor Vehicle/Aircraft Hanger,"Aircraft Hangars with Repairing, Motor Vehicle Repairing Including Auto Body Shops, with or without Sales",Single
+19MD99019621,1900 MARYLAND AVE,BALTIMORE CITY,MD,21218,Yes,No,Joisted Masonry,20694,4,Apartment/Condominium,Apartments without Mercantile Occupancies - Up to 10 Units,Single
+42TX99528344,2875 MAIN ST,FRISCO,TX,75034,Yes,No,Non-Combustible,10216,1,"Mercantile < 15,000 square feet","Multiple Occupancy Mercantile, Less than 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+324102000730,1001 SPRINGWOOD AVE,GIBSONVILLE,NC,27249,Yes,No,Masonry Non-Combustible,101555,1,"Mercantile > 15,000 square feet","Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated",Single
+19MD99001469,4823 INDIAN LN,PRINCE GEORGES,MD,20740,Yes,Yes,Frame,446,1,"Mercantile < 15,000 square feet",Furniture and Home Furnishings other than Appliances,Single
+32NC99010870,5900 HARRIS TECHNOLOGY BLVD,CHARLOTTE,NC,28269,Yes,No,Masonry Non-Combustible,35800,1,Office and banks,Non-Governmental Offices and Banks,Single
+10GA99019423,5780 WINDWARD PKWY,ALPHARETTA,GA,30005,Yes,No,Non-Combustible,31620,3,Office and banks,Non-Governmental Offices and Banks,Single
+10GA99029370,3693 COBB PKWY NW,COBB,GA,30101,Yes,No,Masonry Non-Combustible,63070,1,Motor Vehicle/Aircraft Hanger,"Aircraft Hangars with Repairing, Motor Vehicle Repairing Including Auto Body Shops, with or without Sales",Multiple
+10GA99029371,3693 COBB PKWY NW,COBB,GA,30101,Yes,No,Masonry Non-Combustible,19950,1,Motor Vehicle/Aircraft Hanger,"Aircraft Hangars with Repairing, Motor Vehicle Repairing Including Auto Body Shops, with or without Sales",Multiple
