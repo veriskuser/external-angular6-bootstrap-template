@@ -1,0 +1,184 @@
+<div class="quote" ng-show="quote">
+        <div class="business-info"><b>{{quote.business.name}}</b> &nbsp;|&nbsp; {{quote.business.formatted_address}}
+          <a class="change-address" href="{{reload}}" target="_self"><span>Change Address</span>&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="quote-body">
+            <div class="policy-quote row">
+               <!-- first column -->
+               <div class="col-md-3 premium">
+                 <button class="btn btn-primary btn-md" ng-if="calculateQuote"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Quote</button>
+                 <button class="btn btn-danger btn-md" ng-if="calculateQuote"><i class="fa fa-close" aria-hidden="true"></i>&nbsp;Reject</button>
+                 <button class="btn btn-info btn-md" ng-if="calculateQuote"><i class="fa fa-share" aria-hidden="true"></i>&nbsp;Refer</button>
+                 <div class="key-value" ng-if="!calculateQuote">
+                   <span>{{ quote.policy.Premium }}</span>
+                   <label>Premium due annually</label>
+                 </div>
+               </div>
+               <!-- second column -->
+               <div class="col-md-3">
+                 <div class="key-value">
+                   <span>{{quote.policy.LiabilityLimitPerOccurrence}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Liability Limit (Per Occurrence)</label>
+                 </div>
+                 <div class="key-value">
+                   <span>{{quote.policy.LiabilityLimitAggregate}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Liability Limit (Aggregate)</label>
+                 </div>
+               </div>
+                <!-- third column -->
+               <div class="col-md-3">
+                 <div class="key-value">
+                   <span>{{quote.policy.BusinessAndPersonalPropertyLimit}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Business/Personal Property Limit</label>
+                 </div>
+                 <div class="key-value">
+                   <span>{{quote.policy.PropertyDeductible}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Property Deductible</label>
+                 </div></div>
+              <!-- forth column -->
+               <div class="col-md-3">
+                 <div class="key-value">
+                   <span>{{quote.policy.PolicyTerm.StartDate}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Policy Start Date</label>
+                 </div>
+                 <div class="key-value">
+                   <span>{{quote.policy.BuildingCoverage}}<a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></span>
+                   <label>Building Coverage</label>
+                 </div>
+               </div>
+               <span class="note">The recommendations above are based on policies issued for other businesses with similar characteristics.</span>
+            </div>
+
+            <div class="report">
+              <!-- Business Firmographics -->
+               <h4>Business Firmographics</h4>
+               <div class="sub-section">
+                 <div class="key-value">
+                   <label>SIC</label>
+                   <span>{{quote.businessFirm.sic}}</span>
+                   <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="key-value">
+                   <label>NAICS</label>
+                   <span>{{quote.businessFirm.naics}}</span>
+                   <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="key-value">
+                   <label>Sales</label>
+                   <span>{{quote.businessFirm.sales}}</span>
+                   <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="key-value">
+                   <label>Number Of Employees</label>
+                   <span>{{quote.businessFirm.numberOfEmployees || 'N/A'}}</span>
+                   <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="key-value">
+                   <label>Year Started</label>
+                   <span>{{quote.businessFirm.yearStarted || 'N/A'}}</span>
+                   <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="key-value">
+                   <label>Credit Score</label>
+                   <span>{{quote.businessFirm.creditScore}}</span>
+                    <i class="guidance"> (Target: > 600; Reject: < 450)</i>
+                 </div>
+                 <div class="key-value">
+                   <label>Relative Credit Gradings (Industry/Employees)</label>
+                   <span>{{quote.businessFirm.relativeCreditGrading|| 'N/A'}}</span>
+                   <i class="guidance"> (Target: 1 - 4; Reject: 8 - 10)</i>
+                 </div>
+                 <div class="key-value no-border">
+                   <label>Restaurant Violations Score</label>
+                   <span>{{quote.businessFirm.restaurantViolationScore || 'N/A'}}</span>
+                    <i class="guidance"> (Target: < 35; Refer: 60 - 79; Reject: > 80)</i>
+                 </div>
+                 <div class="key-value no-border">
+                   <label>Liquor license</label>
+                   <span>{{quote.businessFirm.liquorlicensestatus || 'N/A'}}</span>
+                 </div>
+                 <div class="key-value no-border hour-of-operation">
+                   <label>Hours of Operation</label>
+                   <ul>
+                     <li ng-repeat="h in quote.businessFirm.hoursOfOperation"><i class="day">{{h.DayOfWeek}}</i><i>{{h.OpenTime}} - {{h.CloseTime}}</i></li>
+                   </ul>
+                </div>
+
+                 <div class="osha">
+                      <h5>OSHA Violations</h5>
+                      <div class="key-value">
+                        <label>Inspections in last 10 years</label>
+                        <span>{{quote.businessFirm.osha.inspectionsInLast10Years || 'N/A'}}</span>
+                      </div>
+                      <div class="key-value no-border">
+                        <label>Violations in last 10 years</label>
+                        <span>{{quote.businessFirm.osha.violationsInLast10Years || 'N/A'}}</span>
+                      </div>
+                       <table class="table" ng-repeat="inspection in quote.businessFirm.osha.results">
+                        <thead> <tr> <th>Violation Issuance Date</th> <th>Type</th> <th>Standard Cited</th></tr></thead>
+                        <tbody>
+                          <tr ng-repeat="v in inspection.Violations">
+                            <td>{{v.IssuanceDate}}</td>
+                            <td>{{v.ViolationType.Description}}</td>
+                            <td>{{v.StandardCited}}</td> </tr></tbody>
+                      </table>
+                 </div>
+               </div>
+
+               <!-- Property Information -->
+                <h4>Property Information</h4>
+                <div class="sub-section">
+                  <div class="key-value">
+                    <label>Construction Class</label>
+                    <span>{{quote.propertyInfo.constructionClass || "N/A"}}</span>
+                    <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="key-value">
+                    <label>Number of Stories</label>
+                    <span>{{quote.propertyInfo.numberofStories || "N/A"}}</span>
+                    <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="key-value">
+                    <label>Year Built</label>
+                    <span>{{quote.propertyInfo.yearBuilt || "N/A"}}</span>
+                    <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="key-value">
+                    <label>Sprinklered</label>
+                    <span>{{quote.propertyInfo.sprinklered || "N/A"}}</span>
+                    <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <i class="guidance"> ( if True, Credit )</i>
+                  </div>
+                  <div class="key-value no-border">
+                    <label>Square Footage</label>
+                    <span>{{quote.propertyInfo.squareFootage || "N/A"}}</span>
+                    <a class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="key-value no-border">
+                    <label>Occupancy</label>
+                    <span>{{quote.propertyInfo.occupancy || "N/A"}}</span>
+                  </div>
+                </div>
+
+                <!-- neighborhood Information -->
+                 <h4>Neighborhood Information</h4>
+                 <div class="sub-section">
+                   <div class="key-value">
+                     <label>PPC</label>
+                     <span>{{quote.neighborhoodInfo.ppc || 'N/A'}}</span>
+                      <i class="guidance"> ( if > 7, Refer )</i>
+                   </div>
+                   <div class="key-value">
+                     <label>BCEGS</label>
+                     <span>{{quote.neighborhoodInfo.bcegs || 'N/A'}}</span>
+                   </div>
+                   <div class="key-value no-border">
+                     <label>Crime Score</label>
+                     <span>{{quote.neighborhoodInfo.crimeScore || 'N/A' }}</span>
+                      <i class="guidance"> ( if > 7, refer for loss control analysis )</i>
+                   </div>
+
+                 </div>
+            </div>
+        </div>
+     </div>

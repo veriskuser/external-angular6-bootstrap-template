@@ -1,0 +1,56 @@
+{
+   "MatchType":"Exact",
+   "Address":{
+      "StreetAddress1":"545 WASHINGTON BLVD",
+      "City":"JERSEY CITY",
+      "PostalCity":"",
+      "State":"NJ",
+      "Zip":"07310",
+      "Zip4":"1607",
+      "County":"HUDSON"
+   },
+   "BopBusinesses":[
+     {
+        "BusinessName":"Main Street Café",
+        "UniqueIdentifier":"I433398870",
+        "ReportUrl":"http://prometrixapi-internal-uw.iso.com/report/bop/I433398870",
+        "Address":{
+           "StreetAddress1":"545  WASHINGTON BLVD",
+           "City":"JERSEY CITY",
+           "PostalCity":null,
+           "State":"NJ",
+           "Zip":"07310",
+           "Zip4":null,
+           "County":null
+        }
+     },
+     {
+        "BusinessName":"Jane’s Sporting Goods",
+        "UniqueIdentifier":"I592173553",
+        "ReportUrl":"http://prometrixapi-internal-uw.iso.com/report/bop/I592173553",
+        "Address":{
+           "StreetAddress1":"535  WASHINGTON BLVD",
+           "City":"JERSEY CITY",
+           "PostalCity":null,
+           "State":"NJ",
+           "Zip":"07310",
+           "Zip4":null,
+           "County":null
+        }
+     },
+     {
+        "BusinessName":"Elephant Bar & Grill",
+        "UniqueIdentifier":"I433398870",
+        "ReportUrl":"http://prometrixapi-internal-uw.iso.com/report/bop/I433398870",
+        "Address":{
+           "StreetAddress1":"545  WASHINGTON BLVD",
+           "City":"JERSEY CITY",
+           "PostalCity":null,
+           "State":"NJ",
+           "Zip":"07310",
+           "Zip4":null,
+           "County":null
+        }
+     }
+   ]
+}

@@ -1,0 +1,19 @@
+* { padding: 0; margin: 0; line-height: 16pt; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+html, body {top-margin: 0; padding: 0;}
+header { height: 80px; margin: 0 auto; width: 100%;  padding: 10px 20px; border-bottom:1px solid #eee;}
+header h3 { font-size: 22px; color: #555;}
+
+.compare-street-views > div { height:400px; padding:2px 4px;}
+.compare-street-views { margin-bottom: 5px;}
+.compare-street-views div { position: relative; }
+.compare-street-views div > span {  background-color: #f5f5f5 margin: 0 auto; height:100%; display: block; display: block; border: 1px solid #eee; }
+.compare-street-views .google > span { border: 5px solid #ff6b42;}
+.compare-street-views .melissa > span { border: 5px solid #76e7ff;}
+.compare-street-views div > h5 { position: absolute; top: -33px; left: 0; color: #666; font-size: 12px; }
+.street-view span { background-repeat: no-repeat;  }
+.address-info {padding: 6px 9px;}
+[ng-repeat] {border-bottom: 1px solid #e0e0e0; margin-top: 12px;}
+
+.compare-street-views .map { position: relative; }
+.compare-street-views .map .zoom { position: absolute; bottom: 16px; right: 16px; } 

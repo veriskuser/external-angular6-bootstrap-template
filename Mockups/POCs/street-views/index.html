@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="streetViewApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Comparing Street Views</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-controller="ctrl">
+  <header><h3>Comparing Google & Melisa's Street View Photos</h3></header>
+  <div class="comparing-addresses">
+    <div ng-repeat="addr in addresses track by $index">
+      <div class="address-info">
+        <b><i class="fa fa-map-marker" aria-hidden="true"></i></b> {{addr.formatted_address}}  (<b>{{addr.risk}}</b>)
+     </div>
+     <div class="row compare-street-views">
+       <div class="col-md-4 map">
+        <span ng-style="{'background-image': 'url(' + addr.mapUrl + ')'}"></span>
+         <div class="btn-group zoom" role="group" aria-label="...">
+          <button type="button" class="btn btn-sm btn-default" ng-click="zoomTo(addr, 'out')"><i class="fa fa-minus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-sm btn-default" ng-click="zoomTo(addr, addr.defaultZoom)"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-sm btn-default" ng-click="zoomTo(addr, 'in')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+        
+       </div>
+       <div class="col-md-4 street-view google">
+        <h5><b>Street View:</b> Google's Geocode</h5>
+        <span ng-style="{'background-image': 'url(' + addr.google.streetView + ')'}"></span></div>
+       <div class="col-md-4 street-view melissa">
+        <h5><b>Street View:</b> Melissa's Geocode</h5>
+        <span ng-style="{'background-image': 'url(' + addr.melissa.streetView + ')'}"></span></div>
+     </div>
+     
+    </div>
+  </div>
+
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"></script>
+  <script src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>
