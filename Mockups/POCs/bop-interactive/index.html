@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Interactive BOP</title>
     <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Gloria+Hallelujah|Julius+Sans+One|Poor+Story|Schoolbell" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -11,12 +12,14 @@
   </head>
   <body ng-controller="ctrl">
 
-	<div ng-include="template.nav"></div>
+  <div class="upload-property-image" ng-class="{'hide': listOfBusinesses || quote}"><i class="fa fa-picture-o" aria-hidden="true"></i>Upload image by dragging it here.</div>
 
+ <div class="background-overlay" ng-class="{'apply': listOfBusinesses}">
+	<div ng-include="template.nav" class="navigation"></div>
   <div class="search-bar" ng-class="{'expand': listOfBusinesses }">
 
-    <div class="search">
-      <div class="prometrix-logo">powered by<span></span></div>
+    <div class="search" data-drag-zone="true">
+        <!--<div class="prometrix-logo">powered by<span></span></div>-->
         <div class="form-group">
           <label>Enter a business and address:</label>
           <input class="form-control" placeholder="Business name" ng-model="business" >
@@ -35,10 +38,12 @@
           <div class="form-group right">
             <select class="form-control" ng-model="state" ng-options="item.abbreviation as item.abbreviation for item in listOfStates" placeholder="States" ></select>
           </div>
-       </div>
+        </div>
+      <!--  <div class="upload-property-image"><i class="fa fa-picture-o" aria-hidden="true"></i>Upload image by dragging it here.</div>-->
        <a class="btn" ng-class="{'btn-default disabled': listOfBusinesses, 'btn-primary': !listOfBusinesses}" ng-disabled="istOfBusinesses" ng-click="search()">{{findingProperty? 'Searching': 'Search'}}<i is-busy="searching" ng-if="searching"></i></a>
-       <span class="busy-text" ng-show="findingProperty">Retrieving {{ business? 'business': 'property'}} information from ProMetrix...</span>
+       <span class="busy-text" ng-show="findingProperty">Retrieving {{ business? 'business': 'property'}} information... <!-- from ProMetrix... --></span>
       </div>
+
     <div class="select-business" ng-class="{'slide-down': listOfBusinesses}" ng-if="listOfBusinesses" >
       <a class="btn btn-close" ng-click="clear()"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg></a>
       <div class="select-business-label"><span>{{listOfBusinesses.length}}</span> businesses found at address.  Select a business to continue.</div>
@@ -50,22 +55,22 @@
 
     <div class="generating-quotes">
       <span is-busy="generateingQuote" use="rings" include-wrapper="true"></span>
-      <span>Generating quotes from ProMetrix...</span>
+      <span>Generating quotes... <!--from ProMetrix...--></span>
     </div>
 
    </div>
-
-
-
   <div class="content" ng-class="{'overlap': quote}">
      <div ng-include="template.quote"></div>
      <div ng-include="template.footer"></div>
   </div>
 
 
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"></script>
-  <script src="../street-views/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <script src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
   <script src="scripts/app.js"></script>
+
+</div>
 </body>
 </html>

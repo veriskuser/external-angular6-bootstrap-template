@@ -3,6 +3,18 @@ var app = angular.module('interactiveApp', ['ui.bootstrap']);
 
 app.constant('path', window.location.href);
 
+app.directive('dragZone', function () {
+      return {
+          restrict: 'A',
+          scope: {
+            dragZone: "@",
+          },
+          link: function (scope, $element, $attrs) {
+            console.log($element);
+          }
+      };
+  });
+
 app.directive('isBusy', function (path) {
       return {
           restrict: 'A',
@@ -24,6 +36,7 @@ app.directive('isBusy', function (path) {
              scope.$watch('isBusy', function(newValue) {
                scope.active = newValue && typeof newValue.then === 'function';
                setWrapper();
+               if(!scope.active)return;
                newValue.then(function(res){
                  scope.active = false;
                  setWrapper();
@@ -37,17 +50,51 @@ app.directive('isBusy', function (path) {
       };
   });
 
+app.directive('keyValue', function (path) {
+        return {
+            restrict: 'A',
+            scope: {
+              label: "@",
+              editable: "@",
+              value: "=keyValue"
+            },
+            templateUrl: path + 'template/editable-fields.html',
+            link: function (scope, $element, $attrs) {
+              scope.editmode = false;
+              scope.editable = (scope.editable !== "false") && Boolean(scope.editable);
+              scope.tempValue = "";
+
+              scope.cancel = () => {
+                scope.editmode = false;
+              };
+              scope.edit = () => {
+                scope.tempValue = scope.value;
+                scope.editmode = true;
+              };
+              scope.save = () => {
+                scope.value = scope.tempValue;
+                scope.editmode = false;
+              };
+
+
+              scope.$watch('value', function(value) {
+                scope.tempValue = value;
+              });
+            }
+        };
+    });
+
 // Define the `dataFactory` controller on the `phonecatApp` module
 app.factory('datasource', function($http, $q, path) {
   var factory = {};
 
   var formatAddress = function(address){
      var zip = address.Zip4? `${address.Zip || ""}-${address.Zip4 || ""}`: address.Zip;
-    return (`${address.StreetAddress1 || ""} ${address.City || ""} ${address.State || ""} ${zip || ""}` || "").trim().replace(/\s\s+/g, ' ');
+    return (`${address.StreetAddress1 || ""} ${address.City || ""} ${address.State || ""}, ${zip || ""}` || "").trim().replace(/\s\s+/g, ' ');
   };
 
   var businesses = $http.get(path + 'data/search.json').then(function(res){
-      var result = res.data && res.data.BopBusinesses;
+      var result = res.data;
       if(result){
           return result.map(function(i){
             var formatted_address = i.Address && formatAddress(i.Address);
@@ -56,7 +103,8 @@ app.factory('datasource', function($http, $q, path) {
               name: i.BusinessName.toLowerCase(),
               formatted_name: i.BusinessName,
               address_components: i.Address,
-              formatted_address: formatted_address.toLowerCase()
+              formatted_address: formatted_address, //.toLowerCase(),
+              reportUrl: i.FakeUrl
             };
           });
       };
@@ -70,7 +118,6 @@ app.factory('datasource', function($http, $q, path) {
   var calculateQuote = $http.get(path + 'data/quote.json').then(function(res){
       return res.data;
   });
-
 
   var transformReport = function(r){
       var relativeCreditGrading, totalOshaViolations;
@@ -100,6 +147,8 @@ app.factory('datasource', function($http, $q, path) {
         businessFirm: {
           sic: r.Ms1.BusinessSicCodes && r.Ms1.BusinessSicCodes.length && `${r.Ms1.BusinessSicCodes[0].Code} - ${r.Ms1.BusinessSicCodes[0].Description}`.toLowerCase(),
           naics: r.Ms1.BusinessNaicsCodes && r.Ms1.BusinessNaicsCodes.length && `${r.Ms1.BusinessNaicsCodes[0].Code} - ${r.Ms1.BusinessNaicsCodes[0].Description}`.toLowerCase(),
+          naicsSecondary: r.Ms1.BusinessNaicsCodes && r.Ms1.BusinessNaicsCodes.length > 1 && `${r.Ms1.BusinessNaicsCodes[1].Code} - ${r.Ms1.BusinessNaicsCodes[1].Description}`.toLowerCase(),
+          naicsTertiary: r.Ms1.BusinessNaicsCodes && r.Ms1.BusinessNaicsCodes.length > 2 && `${r.Ms1.BusinessNaicsCodes[2].Code} - ${r.Ms1.BusinessNaicsCodes[2].Description}`.toLowerCase(),
           sales: r.Ms1.SalesVolume,
           numberOfEmployees: r.Ms1.TotalEmployees,
           yearStarted: r.Ms2.YearStarted,
@@ -108,6 +157,9 @@ app.factory('datasource', function($http, $q, path) {
           restaurantViolationScore: restaurantViolationScore,
           liquorlicensestatus: r.Ms2.LiquorLicenseStatus,
           hoursOfOperation: r.Ms2.HoursOfOperation,
+          feinNumber: r.Ms4.FeinNumber,
+          yearStarted: r.Ms2.YearStarted,
+          payroll: r.Ms4.Payroll,
           osha: {
             inspectionsInLast10Years: r.Ms4.OshaInpectionsAndViolations.OshaResults.length,
             violationsInLast10Years: totalOshaViolations,
@@ -120,7 +172,9 @@ app.factory('datasource', function($http, $q, path) {
           yearBuilt: r.Ms1.YearBuilt,
           squareFootage: r.Ms1.SquareFootage,
           sprinklered: (r.Ms3.Sprinklered || "").toString(),
-          occupancy: r.Ms1.Occupancy && r.Ms1.Occupancy.Description
+          occupancy: r.Ms1.Occupancy && r.Ms1.Occupancy.Description,
+          onsiteSurveyDate: r.Ms4.OnsiteSurveyDate,
+          roofAge: r.Ms1.YearBuilt || r.Ms1.RoofAge
         },
         neighborhoodInfo: {
           ppc: r.Ms1.Ppc,
@@ -151,11 +205,12 @@ app.factory('datasource', function($http, $q, path) {
     });
   };
 
-  factory.findAddress = function(text){
+  factory.findBusinessWithAddress = function(address){
     return businesses.then(function(res){
           if(!res || !res.length) return [];
+          var text = `${address.StreetAddress1} ${address.City}`.toLowerCase().trim().replace(/\s\s+/g, ' ');
           var result = res.filter(function(i){
-            return i.formatted_address.includes(text);
+            return i.formatted_address.toLowerCase().includes(text);
           });
 
           // cloning object to prevent tampering with orginal object.
@@ -166,21 +221,17 @@ app.factory('datasource', function($http, $q, path) {
   };
 
   factory.getQuote = function(business) {
-    business = business || { "id":"I718894407","name":"goldman sachs & co","formatted_name":"GOLDMAN SACHS & CO","address_components":{"StreetAddress1":"545  WASHINGTON BLVD","City":"JERSEY CITY","PostalCity":null,"State":"NJ","Zip":"07310","Zip4":null,"County":null},"formatted_address":"545 washington blvd jersey city nj 07310"};
-    return latency($http.get(path + 'data/elephant-bar-restaurant.json'), 1000).then(function(report) {
+    business = business || { "id":"I718894407","name":"goldman sachs & co","formatted_name":"GOLDMAN SACHS & CO","address_components":{"StreetAddress1":"545  WASHINGTON BLVD","City":"JERSEY CITY","PostalCity":null,"State":"NJ","Zip":"07310","Zip4":null,"County":null},"formatted_address":"545 Washington Blvd Jersey City, NJ 07310"};
+    var url = business.reportUrl || 'reports/elephant-bar-restaurant';
+    return latency($http.get(path + `data/${url}.json`), 5).then(function(report) {
         return calculateQuote.then(function(quote){
           return Object.assign({ business: business, policy: quote }, transformReport(report.data));
         });
     });
-
-
   };
 
   return factory;
 });
-
-
-
 
 // Define the `bopController` controller on the `phonecatApp` module
 app.controller('ctrl', function($scope, $uibModal, datasource, $q, path) {
@@ -235,25 +286,44 @@ app.controller('ctrl', function($scope, $uibModal, datasource, $q, path) {
 
 
   $scope.getQuote = function(){
-    viewQuote(datasource.getQuote({
-      name: $scope.selectedBusiness? $scope.selectedBusiness.name: $scope.business.toLowerCase(),
+    var business = $scope.selectedBusiness || {
+      name: $scope.business.toLowerCase(),
       formatted_name: $scope.business,
       formatted_address: formattedAddress()
-    }));
+    }
+    viewQuote(datasource.getQuote(business));
+  };
+
+  $scope.calculate = () => {
+    $scope.calculateQuote = false;
   };
 
   $scope.search = function() {
-     text = ($scope.business || "").toLowerCase();
+     var text = ($scope.business || "").toLowerCase();
+     var address = {
+        StreetAddress1: ($scope.street || ""),
+        City: ($scope.city || ""),
+        State: ($scope.state || ""),
+        Zip: ($scope.zip || "")
+      };
+
      clear();
 
-    if(!$scope.business && $.trim(formattedAddress())){
+    /*if(!$scope.business && $.trim(formattedAddress())){
       $scope.findingProperty = true;
       $scope.searching = datasource.findBusiness(text).then(function(res){
         $scope.findingProperty = false;
         $scope.listOfBusinesses = res;
-     });
-    }
+     });*/
 
+     if(!$scope.business && !$.trim(formattedAddress())) { return; }
+     else if(!$scope.business){
+       $scope.findingProperty = true;
+       $scope.searching = datasource.findBusinessWithAddress(address).then(function(res){
+         $scope.findingProperty = false;
+         $scope.listOfBusinesses = res;
+      });
+    }
     else {
       $scope.getQuote();
     }
@@ -272,13 +342,9 @@ app.controller('ctrl', function($scope, $uibModal, datasource, $q, path) {
    $scope.template = template;
    $scope.calculateQuote = false;
 
-
-
    //viewQuote(datasource.getQuote());
    /*$scope.searching = datasource.findBusiness().then(function(res){
      $scope.listOfBusinesses = res;
    });
    //*/
-
-
 });

@@ -14,7 +14,7 @@
 	-webkit-animation-timing-function: ease;
 
 	visibility: visible !important;
-	
+
 }
 
 @keyframes slide-in-business-selector {
@@ -52,6 +52,9 @@
 		-webkit-transform: translateY(0%);
 	}
 }
+
+
+/**/
 
 
 
