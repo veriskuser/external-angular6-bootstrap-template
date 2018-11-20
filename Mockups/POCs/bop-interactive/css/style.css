@@ -2,14 +2,30 @@
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
  }
-html, body {background-color: #fafafa; display: flex; flex-direction: column; height: 100%; font-size:14px;}
+html, body {background-color: #fafafa; display: flex; flex-direction: column; font-size:14px; height: 100%;}
 body > * {flex-shrink: 0;}
 .right {float: right;}
 
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Poor Story', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Nobile', sans-serif;
+font-family: 'Marmelad', sans-serif;
+*/
+
+
+body { background: url('../image/skyline2.svg') repeat-x bottom; }
+.background-overlay.apply { background-color: #ffffff7a;}
+
+
+
+.upload-property-image { position: absolute; bottom: 28%; border: 1px dashed #aaa; width: 300px; padding: 28px 0; text-align: center; left: calc(50% - (300px/2)); color: #aaa; border-radius: 4px; }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ccc;
-    font-style: italic;
+    fonst-style: italic;
     opacity: 1; /* Firefox */
 }
 
@@ -21,19 +37,32 @@ body > * {flex-shrink: 0;}
     color: #ccc;font-style: italic;
 }
 
+
+.navigation { height: 85px; border: 1px solid #d4d3d3; background: white;  padding: 32px 10px;}
+.navigation .logo { font-family: 'Julius Sans One', sans-serif; margin-left: 20px; font-size: 2em; float: left; color:#333;     position: relative;
+    top: -5px; }
+.navigation .logo span { font-family: 'Poor Story', cursive;}
+.navigation .logo span, .navigation .logo .fa { color:#000; }
+.navigation ul { list-style: none; float: right; margin-right: 20px; font-size: 1.01em;}
+.navigation ul li { margin-left: 20px; float: right;}
+.navigation ul li a { color: #666; cursor: pointer;}
+
 /*.search-bar { height:150px; margin: 0 auto; width:100%; padding: 50px 0; }*/
 .search-bar { height:650px; width:720px; margin: 0 auto; padding: 30px 0 5px;  margin-bottom: 50px; position: relative;}
 
 .busy-text {display: block; font-size: 12px; color: #aaa; margin-top: 20px;}
 
+.navbar { margin-bottom: 0;}
 
+
+[data-drag-zone] { border: 6px solid #3fb44969; width:100%;  overflow: auto;}
 
 .search-bar .search { background-color: white; position:relative; font-size:16px; margin: 0 auto 20px; border:1px solid #ccc; padding: 21px 36px; overflow:auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 .search-bar .search input , .search-bar .search button, .search-bar .search select { height:40px; }
 .search-bar .search .city { width:365px; }
 .search-bar .search select { width: 80px; margin-right: 2px; }
 .search-bar .search a.btn{ margin-top: 10px; min-width:90px; float:right; }
-
+.search label { margin-bottom: 12px; }
 .search-bar .search .btn [is-busy] > [ng-include],
 .search-bar .search .btn [is-busy] > svg { float:right; margin-left:10px;}
 
@@ -42,6 +71,9 @@ body > * {flex-shrink: 0;}
 .search-bar .select-business .btn { float: right;}
 .search-bar .select-business .btn.btn-close svg { height: 16px; width: 16px; margin-top: 4px;}
 
+/*.search-bar .upload-property-image { font-size: 0.8em; color: #999999; position: absolute; bottom: 24px; text-decoration: none;}*/
+.upload-property-image .fa { margin-right:6px; }
+
 .generating-quotes {  margin: 0px auto 10px; text-align: center; font-size: 12px; color: #999;}
 
 .reveal-quote .navbar { margin-bottom: 0;}
@@ -49,10 +81,10 @@ body > * {flex-shrink: 0;}
 .reveal-quote .search, .reveal-quote .select-business, .reveal-quote .prometrix-logo { display: none; }
 .reveal-quote .search-bar.expand {padding:0;}
 
-.select-business-label { padding: 7px; }
+.select-business-label { padding: 7px; padding: 7px; font-size: 1.2em; }
 .select-business-label span { font-size: 1.3em; font-weight: bold;}
 
-.content { background-color:white; }
+.content { background-color:#f9f9f9; }
 .reveal-quote .content {border-top:1px solid #ddd; }
 
 .select-business .list-group-item { text-transform: capitalize; }
@@ -66,7 +98,7 @@ body > * {flex-shrink: 0;}
 .quote .business-info .change-address{font-size: 14px; cursor: pointer; float: right; margin-right: 8px; }
 .quote .business-info .change-address span { text-decoration: underline;}
 
-.quote .quote-body { border: 1px solid #ddd; width:100%; margin-bottom: 80px;
+.quote .quote-body { border: 1px solid #ddd; width:100%; margin-bottom: 80px; background-color: white;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.24);
   -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.24);
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.24); }
@@ -79,14 +111,16 @@ body > * {flex-shrink: 0;}
 .quote .quote-body .policy-quote .premium .btn:first-child { margin-top:10px;}
 .quote .policy-quote .premium .key-value { margin-top: 0; border-left: 6px solid #468dba; line-height: 74px; padding: 43px 10px 2px;}
 .quote .policy-quote .premium .key-value span { font-size: 54px !important;}
-.quote .policy-quote .premium .key-value label {    margin-left: 5px;}
+.quote .policy-quote .premium .key-value label { margin-left: 5px; margin-top:35px; }
 
 .quote .key-value span {display:block;}
-.quote .policy-quote .key-value { margin: 15px 0;}
-.quote .policy-quote .key-value span {font-size:19px !important; color:#555; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  }
-.quote .policy-quote .key-value label {font-size:11.5px !important; color:#999 !important; font-weight: normal;}
+.quote .policy-quote .key-value { margin: 15px 0; min-height: 65px; position: relative; overflow: auto;}
+.quote .policy-quote .key-value span {font-size:19px !important; color:#555; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; display: block; float: left;}
+.quote .policy-quote .key-value label {font-size:11.5px !important; color:#999 !important; font-weight: normal; float: left; clear: both;}
 .quote .policy-quote { border-bottom:1px solid #eee; }
-
+.quote .policy-quote .key-value input { width: 110px; padding: 0 5px; }
+.quote .policy-quote .btn-group { right: 5px; top: 0;}
+.quote .report .key-value input, .quote .policy-quote .key-value input { height: 34px; }
 
 .quote .report { padding: 40px 40px; }
 .quote .report h4 { margin-bottom: 20px; color: #777; font-weight: 600; font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
@@ -96,6 +130,9 @@ body > * {flex-shrink: 0;}
 .quote .report .key-value.no-border { border-bottom:0;}
 .quote .report .key-value label { font-weight: normal!important; color:#555;}
 .quote .report .key-value span, .quote .report .key-value ul { width:500px;  color:#555; float:right; text-transform: capitalize;}
+
+.quote .report .key-value input { width: 450px; color: #555; float: right; text-transform: capitalize; order: 1px solid #cacaca;  position: absolute; right: 75px; top: 6px; padding: 0 8px;}
+
 .quote .guidance { position: absolute; right: 60px; color: #aaa !important; font-size: 14px !important;}
 .quote .hour-of-operation  {overflow: auto;}
 .quote .hour-of-operation span i {display: block; font-style: normal !important; }
@@ -112,15 +149,15 @@ body > * {flex-shrink: 0;}
 .quote .report .key-value label { text-transform: capitalize; }
 
 .quote .btn-edit {font-size: 16px;color: #4a90e2; float:right; position: absolute; right: 10px; top: 4px;}
-.quote  .quote-body .policy-quote .btn-edit { font-size: 16px;
-    color: #4a90e2;
-    margin-top: -5px;
-    float: none;
-    position: initial;
-	padding: 2px 13px 3px;	}
+.quote .btn-group { position: absolute; right: 0; top: 6px;}
+.quote .btn-group .btn-default.cancel { color: #b91717; }
+.quote .btn-group .btn-default.save { color: #23942d; }
+.quote  .quote-body .policy-quote .btn-edit { font-size: 16px; color: #4a90e2; margin-top: -5px; float: left; position: initial; padding: 2px 13px 3px;	}
 
 footer { font-size: 12px; bottom: 0px; width: 100%; padding: 0 0 24px; text-align: center; height: 60px; position:fixed;
  left:0px;}
+footer .text-muted { color: white;}
+footer .text-muted a { color: white;}
 footer.undock { position: static;}
 footer .container { width: 930px; margin: 0 auto;}
 
