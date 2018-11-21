@@ -1,0 +1,48 @@
+Global
+	Empty section - show msg, dont hide
+
+Executive Summary - 
+
+Company Overview - metadata about the company
+
+Subsidaries - metadata about subs, list, show org, NAICS, Domain - hide other under icons 
+
+Cyber Event History
+	2 side by side bar charts - 
+		frequency vs industry standard
+		severity vs indus standard
+	Largest Data Breach - grid
+
+	
+	2 side by side bar charts - 
+		freq vs industry standard
+	Largest Randomware Event  - grid
+
+	
+	2 side by side bar charts - 
+		freq vs industry standard
+	Largest Network Disruption - grid
+	Overal Event History Percential - show percentile bar chart (from BUR)
+
+
+Security Hygiene
+	Show percentile/grade for each and tooltip for description, bar chart for each
+	
+	Network Security
+	DNS Health
+	Patching Cadence
+	Endpoint Security
+	IP Reputation
+	Cubit Score
+	Application Security
+	Hacker Chatter
+	Information Leak
+	Social
+	Overall Score - rollup score 
+	Score History - show line graph w/ industry standard
+	Score Trend Rating
+
+
+Inherited Risk - Nick to send us more data
+
+	

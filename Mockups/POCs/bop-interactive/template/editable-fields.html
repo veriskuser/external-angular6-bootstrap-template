@@ -1,0 +1,9 @@
+
+<input ng-model="tempValue" ng-show="editmode" />
+<span ng-hide="editmode">{{value || "N/A"}}</span>
+<a class="btn btn-edit" ng-if="editable" ng-hide="editmode" ng-click="edit()"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<label>{{label}}</label>
+<div class="btn-group" role="toolbar" aria-label="..." ng-show="editmode">
+  <button class="btn btn-default save" role="group" aria-label="..."  ng-click="save()"><i class="fa fa-check" aria-hidden="true"></i></<button>
+  <button class="btn btn-default cancel" role="group" aria-label="..." ng-click="cancel()"><i class="fa fa-times" aria-hidden="true"></i></<button>
+</div>

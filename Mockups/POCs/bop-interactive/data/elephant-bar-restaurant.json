@@ -1,0 +1,759 @@
+{
+   "BusinessName":"Elephant Bar &  Restaurant",
+   "Address":{
+      "StreetAddress1":"200 SW 2ND ST",
+      "City":"DES MOINES",
+      "PostalCity":"",
+      "State":"IA",
+      "Zip":"50309",
+      "Zip4":"4706",
+      "County":"POLK"
+   },
+   "Ms1":{
+      "BusinessSicCodes":[
+         {
+            "Code":"581312",
+            "Description":"Drinking Places (Alcoholic Beverages)",
+            "Sequence":"1"
+         }
+      ],
+      "BusinessNaicsCodes":[
+         {
+            "Code":72241012,
+            "Description":"Drinking Places (Alcoholic Beverages)",
+            "Sequence":1
+         }
+      ],
+      "SalesVolume":"$669,000.00",
+      "TotalEmployees":"14",
+      "IsEmploymentVerified":false,
+      "CreditScore":735,
+      "BuildingFireConstructionCode":{
+         "Code":"1",
+         "Description":"Frame"
+      },
+      "GpsCoordinates":{
+         "Latitude":41.58325,
+         "Longitude":-93.61831
+      },
+      "OnsiteSurveyDate":"12/01/2011",
+      "Occupancy":{
+         "Code":"0433",
+         "Description":"Multiple Occupancy Mercantile, Over 15,000 Square Feet, Building Coverage Only, Not Fire Class Rated"
+      },
+      "YearBuilt":2002,
+      "Stories":3,
+      "SquareFootage":"29,608 sq. ft",
+      "Ppc":"03"
+   },
+   "Ms2":{
+      "BusinessDescription":null,
+      "ContactName":null,
+      "WorkFromHome":false,
+      "HoursOfOperation":[
+	     {
+            "DayOfWeek":"Sun",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+         {
+            "DayOfWeek":"Mon",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+         {
+            "DayOfWeek":"Tue",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+         {
+            "DayOfWeek":"Wed",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+         {
+            "DayOfWeek":"Thu",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+         {
+            "DayOfWeek":"Fri",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         },
+		 {
+            "DayOfWeek":"Sat",
+            "OpenTime":"09:00",
+            "CloseTime":"22:00"
+         }
+      ],
+      "YearStarted":"2005",
+      "RelativeCreditGradings":[
+         {
+            "GroupingCriterias":[
+               {
+                  "GroupingName":"Industry",
+                  "GroupingCode":"33",
+                  "GroupingValue":"Manufacturing"
+               },
+               {
+                  "GroupingName":"Number of Employees",
+                  "GroupingCode":"",
+                  "GroupingValue":"1,000+"
+               }
+            ],
+            "GradingValue":"1",
+            "IsSpecialBucket":false
+         }
+      ],
+      "RestaurantInspections":[
+         {
+            "InspectionDate":"2017-10-31T00:00:00",
+            "Score":0
+         },
+         {
+            "InspectionDate":"2017-10-17T00:00:00",
+            "Score":82
+         },
+         {
+            "InspectionDate":"2017-09-22T00:00:00",
+            "Score":100
+         },
+         {
+            "InspectionDate":"2015-04-10T00:00:00",
+            "Score":0
+         },
+         {
+            "InspectionDate":"2015-04-08T00:00:00",
+            "Score":98
+         }
+      ],
+      "LiquorLicenseStatus":"Active",
+      "OshaResults":[
+         {
+            "InspectionNumber":"316300763",
+            "OpenDate":"2012-01-17",
+            "InspectionType":"B",
+            "CloseDate":"2012-03-01"
+         }
+      ]
+   },
+   "Ms3":{
+      "Sprinklered":true,
+      "Crime":{
+         "MatchType":"Address Level Match",
+         "CAPRiskIndex":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"758",
+               "Past":"893",
+               "Forecasted":"816"
+            }
+         },
+         "IsReportAvailable":true,
+         "Arson":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"743",
+               "Past":"875",
+               "Forecasted":"800"
+            }
+         },
+         "AutoTheft":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1045",
+               "Past":"837",
+               "Forecasted":"1016"
+            }
+         },
+         "Robbery":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"719",
+               "Past":"897",
+               "Forecasted":"782"
+            }
+         },
+         "AggravatedAssault":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"518",
+               "Past":"542",
+               "Forecasted":"511"
+            }
+         },
+         "Burglary":{
+            "IndexValuesUpto10":{
+               "Current":"8",
+               "Past":"9",
+               "Forecasted":"8"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"371",
+               "Past":"480",
+               "Forecasted":"386"
+            }
+         },
+         "Homicide":{
+            "IndexValuesUpto10":{
+               "Current":"7",
+               "Past":"7",
+               "Forecasted":"8"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"295",
+               "Past":"288",
+               "Forecasted":"302"
+            }
+         },
+         "Rape":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"844",
+               "Past":"815",
+               "Forecasted":"913"
+            }
+         },
+         "Larceny":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1394",
+               "Past":"1582",
+               "Forecasted":"1388"
+            }
+         },
+         "AggregateCrimesAgainstPerson":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"625",
+               "Past":"681",
+               "Forecasted":"641"
+            }
+         },
+         "AggregateCrimesAgainstProperty":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1380",
+               "Past":"1578",
+               "Forecasted":"1341"
+            }
+         }
+      },
+      "Bcegs":"04"
+   },
+   "Ms4":{
+      "LegalName":"HIGH LIFE LOUNGE",
+      "IdentifiedOperations":[
+         {
+            "State":"IA",
+            "Count":1
+         }
+      ],
+      "LocationType":"Single Location",
+      "StateOfIncorporation":"IA",
+      "WebSite":null,
+      "PhoneNumber":null,
+      "Payroll":null,
+      "PremiseFloorArea":null,
+      "BusinessLinkage":"HIGH LIFE LOUNGE",
+      "BankruptcyCount":0,
+      "LiensCount":0,
+      "FloorData":[
+         {
+            "FloorLevel":1,
+            "SquareFootage":10196,
+            "FloorType":"FLOOR"
+         },
+         {
+            "FloorLevel":2,
+            "SquareFootage":5364,
+            "FloorType":"FLOOR"
+         },
+         {
+            "FloorLevel":1,
+            "SquareFootage":8684,
+            "FloorType":"BASEMENT"
+         }
+      ],
+      "Combustibility":"3",
+      "OnsiteSurveyDate":"12/01/2011",
+      "SalePrice":"0",
+      "PricePerSquateFeet":null,
+      "MarketValue":"0",
+      "EffectiveYearBuilt":2002,
+      "RestaurantInspectionAndViolations":{
+         "IsDataApplicable":true,
+         "RestaurantInspections":[
+            {
+               "InspectionDate":"10/17/2017",
+               "HazelScore":82,
+               "ReinspectionType":"Is Follow-up",
+               "RestaurantViolations":[
+                  {
+                     "Category":"Contamination",
+                     "Score":95,
+                     "ViolationDetails":[
+                        "Protection from Contamination: Food contact surfaces: cleaned and sanitized",
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)",
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)"
+                     ],
+                     "Comments":[
+                        "Repeat Violation. Ice machine interior had residue build-up. 10/27/2017",
+                        "Repeat violation. Raw chicken stored above ground meat in the walk-in-cooler. \nHamburger stored above the steak in the under counter fridge across from broiler. Item corrected by \nPerson in Charge rearranging storage.\nCOS",
+                        "Repeat violation. Raw chicken stored above pre-cooked product in walk-in-cooler. Item \ncorrected by Person in Charge rearranging raw meat storage. Par cooked chicken stored above \nvegetables next to the under counter refrigeration next to the fry freezer. Item corrected by Person in \nCharge removing chicken to be stored on the bottom.\nCOS"
+                     ]
+                  },
+                  {
+                     "Category":"Temperature",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  },
+                  {
+                     "Category":"Employee",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  },
+                  {
+                     "Category":"Facility",
+                     "Score":91,
+                     "ViolationDetails":[
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible",
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible"
+                     ],
+                     "Comments":[
+                        "No paper towels at High Life bar hand sink. Item corrected by Person in Charge bringing \ntowels to hand sink.\nCOS",
+                        "No Hand washing sign posted at High Life bar hand sink. Item corrected by Person in \nCharge posting a new sign.\nCOS"
+                     ]
+                  }
+               ]
+            },
+            {
+               "InspectionDate":"09/22/2017",
+               "HazelScore":100,
+               "ReinspectionType":"Needs Follow-up",
+               "RestaurantViolations":[
+                  {
+                     "Category":"Contamination",
+                     "Score":99,
+                     "ViolationDetails":[
+                        "Food/Color Additives and Toxic Substances: Toxic substances properly identified, stored and use",
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)",
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)",
+                        "Protection from Contamination: Food contact surfaces: cleaned and sanitized",
+                        "Control of Hands as a Vehicle of Contamination: No bare hand contact with ready to eat foods"
+                     ],
+                     "Comments":[
+                        "Spray bottles throughout the establishment did not have a label of the common name of \nthe product.\n10/2/2017",
+                        "Several bags and containers of raw bacon stored above vegetables in walk-in-cooler. 9/25/2017",
+                        "Raw chicken stored above hamburger in under counter fridge across from broiler. Person \nin charge rearranged storage.\nCOS",
+                        "Repeat violation. Ice machine interior had residue build-up. 10/2/2017",
+                        "Repeat Violation. Employee placed pickles and onions on bun with bare hands. Person in \ncharge voluntarily discarded product.\nCOS"
+                     ]
+                  },
+                  {
+                     "Category":"Temperature",
+                     "Score":99,
+                     "ViolationDetails":[
+                        "Potentially Hazardous Food Time/Temperature Control for Safety: Proper cold holding temperatures",
+                        "Food Temperature Control: Approved thawing methods",
+                        "Potentially Hazardous Food Time/Temperature Control for Safety: Proper cooling time and temperatures"
+                     ],
+                     "Comments":[
+                        "Repeat violation. Single door refrigeration next to the walk-in-cooler contained shredded \ncheese at 57*F. Person in charge voluntarily discarded all cheeses. Milk two door refrigeration \ncontained sour cream at 46 and salsa at 44*F. Person in charge agreed to contact maintenance and to \nremove all items from refrigeration. Person in charge had gotten a truck in this day and had frequently \nbeen opening refrigeration.\n9/25/2017",
+                        "Fries thawing on the counter. Establishment placed back into freezer. COS",
+                        "Two containers of cooked rice between 107-80*F cooling in the walk-in-cooler slightly \nvented prepared one hour and forty-five minutes before the inspection. Person in charge reheated one \npan to 165*F and voluntarily discarded the second pan.  Elvis sauce prepared on 9/20/17 was between \n44-50*F, Chicken corn prepared on 9/21/17 was at 46*F, and Pot roast prepared 9/21/17 at 45*F. \nPhotos taken. Person in charge voluntarily discarded all Elvis sauce, chicken corn, and pot roast. \nDeviled eggs prepared two hour prior to inspection in standing single door refrigeration at 57*F and \nhard boiled eggs at 70*F. Hard boiled eggs also stored in open top-refrigeration next to the walk-in-\ncooler. Egg products were stored covered. Person in charge voluntarily discarded all egg products.\nCOS"
+                     ]
+                  },
+                  {
+                     "Category":"Employee",
+                     "Score":97,
+                     "ViolationDetails":[
+                        "Good Hygienic Practices: Proper eating, tasting, drinking, or tobacco use",
+                        "Control of Hands as a Vehicle of Contamination: Hands clean and properly washed"
+                     ],
+                     "Comments":[
+                        "Repeat violation. Establishment had open beverage on prep counter at cook line. Person \nin charge voluntarily discarded beverage.\nCOS",
+                        "Employees placed raw hamburger on flat top grill and did not wash hands prior to putting \non a new pair of gloves. Per inspectors request, employee washed hands before putting on a new pair \nof gloves.\nCOS"
+                     ]
+                  },
+                  {
+                     "Category":"Facility",
+                     "Score":99,
+                     "ViolationDetails":[
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible",
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible",
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible",
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible",
+                        "Control of Hands as a Vehicle of Contamination: Hand washing sinks properly supplied and accessible"
+                     ],
+                     "Comments":[
+                        "Hand sink at High Life bar used as a dumping sink. 10/2/2017",
+                        "Hand washing sign not posted at High Life bar hand sink. 10/2/2017",
+                        "No hand soap available at bar hand sink located on High Life side. 10/2/2017",
+                        "No paper towels located at High Life bar hand sink. 10/2/2017",
+                        "No hand sink located at outside bar that serves bottled beverages and fountain beverage \nwith ice.\n10/2/2017"
+                     ]
+                  }
+               ]
+            },
+            {
+               "InspectionDate":"04/10/2015",
+               "HazelScore":0,
+               "ReinspectionType":"Is Follow-up",
+               "RestaurantViolations":[
+                  {
+                     "Category":"Contamination",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  },
+                  {
+                     "Category":"Temperature",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  },
+                  {
+                     "Category":"Employee",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  },
+                  {
+                     "Category":"Facility",
+                     "Score":0,
+                     "ViolationDetails":[
+
+                     ],
+                     "Comments":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "InspectionDate":"04/08/2015",
+               "HazelScore":98,
+               "ReinspectionType":"Needs Follow-up",
+               "RestaurantViolations":[
+                  {
+                     "Category":"Contamination",
+                     "Score":99,
+                     "ViolationDetails":[
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)",
+                        "Protection from Contamination: Food separated and protected (Cross Contamination and Environmental)",
+                        "Control of Hands as a Vehicle of Contamination: No bare hand contact with ready to eat foods",
+                        "Proper Use of Utensils: In use utensils:  properly stored",
+                        "Protection from Contamination: Food contact surfaces: cleaned and sanitized",
+                        "Utensils, Equipment, and Vending: Non-food contact surfaces clean",
+                        "Proper Use of Utensils: Single-use/single service articles: properly stored and used"
+                     ],
+                     "Comments":[
+                        "Observed an open box of lettuce stored under refrigeration lines with condensate drip \nformation in the walk-in cooler.  Lettuce was disposed of for correction onsite.\n1/1/0001",
+                        "Observed ice storage bins throughout the facility that require covers for the protection \nfrom environmental contamination.\n4/22/2015",
+                        "Cooked Tator Tots and Lettuce were disposed of during the inspection due to bare-hand \ncontact.  Repeat violation requiring managerial control and a long-term corrective action plan be \nimplemented.\n1/1/0001",
+                        "Store ice transfer buckets an a manner that will drain and dry between uses. 1/1/0001",
+                        "Although both ice makers have been recently cleaned, the cleaning did not include the \nice storage bin area of each machine where a discolored substance was observed and requires further \ncleaning.\n4/22/2015",
+                        "Observed several soiled soda fountain gun holsters behind the bar area in the el bait \nshop side of the facility.\n1/1/0001",
+                        "Several cases of single-service cups and plates that were stored in an outside storage \narea unprotected from contamination and were disposed of due to contamination from rain.\n1/1/0001"
+                     ]
+                  },
+                  {
+                     "Category":"Temperature",
+                     "Score":99,
+                     "ViolationDetails":[
+                        "Consumer Advisory: Consumer advisory provided for raw or undercooked foods",
+                        "Potentially Hazardous Food Time/Temperature Control for Safety: Proper date marking and disposition",
+                        "Food Temperature Control: Thermometers provided and accurate",
+                        "Potentially Hazardous Food Time/Temperature Control for Safety: Proper cold holding temperatures"
+                     ],
+                     "Comments":[
+                        "Although there is consumer advisory language on each menu that warns of the adverse \nhealth affects of consuming under-cooked animal foods, each menu line-item that is offered cooked to \norder is not identified with\n4/22/2015",
+                        "Observed several homemade sauces in the walk-in cooler that were beyond the seven \nday datemarking requirements and were disposed of for correction onsite.\n1/1/0001",
+                        "Thin-probe tip-sensitive digital thermometers are needed for thinly cooked foods such as \nfish and burger patties.\n4/22/2015",
+                        "Observed two pass-through prep coolers in the kitchen holding raw meats and ready-to-\neat food at temperatures up to 50 degrees, and one sandwich cooler holding ready-to-eat food up to 45 \ndegrees.  Several doors associated with all three coolers are somewhat damaged and requires effort to \nproperly close and remain closed.  Refrigeration repair was called and scheduled for next day service.\n4/22/2015"
+                     ]
+                  },
+                  {
+                     "Category":"Employee",
+                     "Score":87,
+                     "ViolationDetails":[
+                        "Good Hygienic Practices: Proper eating, tasting, drinking, or tobacco use"
+                     ],
+                     "Comments":[
+                        "Employee beverage containers in the kitchen area are required to have lids and need to \nbe stored in a manner that cannot contaminate prepared food, or food contact surfaces, with spillage or \ncondensate drip.  Corrected onsite.\n1/1/0001"
+                     ]
+                  },
+                  {
+                     "Category":"Facility",
+                     "Score":78,
+                     "ViolationDetails":[
+                        "Utensils, Equipment, and Vending: Warewashing facilities: installed, maintained, and used; test strips"
+                     ],
+                     "Comments":[
+                        "No test strips are available for testing proper concentrations of Chlorine and Quaternary \nAmmonia sanitizers.\n4/22/2015"
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      "Crime":{
+         "MatchType":"Address Level Match",
+         "CAPRiskIndex":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"758",
+               "Past":"893",
+               "Forecasted":"816"
+            }
+         },
+         "IsReportAvailable":true,
+         "Arson":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"743",
+               "Past":"875",
+               "Forecasted":"800"
+            }
+         },
+         "AutoTheft":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1045",
+               "Past":"837",
+               "Forecasted":"1016"
+            }
+         },
+         "Robbery":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"719",
+               "Past":"897",
+               "Forecasted":"782"
+            }
+         },
+         "AggravatedAssault":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"518",
+               "Past":"542",
+               "Forecasted":"511"
+            }
+         },
+         "Burglary":{
+            "IndexValuesUpto10":{
+               "Current":"8",
+               "Past":"9",
+               "Forecasted":"8"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"371",
+               "Past":"480",
+               "Forecasted":"386"
+            }
+         },
+         "Homicide":{
+            "IndexValuesUpto10":{
+               "Current":"7",
+               "Past":"7",
+               "Forecasted":"8"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"295",
+               "Past":"288",
+               "Forecasted":"302"
+            }
+         },
+         "Rape":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"844",
+               "Past":"815",
+               "Forecasted":"913"
+            }
+         },
+         "Larceny":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1394",
+               "Past":"1582",
+               "Forecasted":"1388"
+            }
+         },
+         "AggregateCrimesAgainstPerson":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"625",
+               "Past":"681",
+               "Forecasted":"641"
+            }
+         },
+         "AggregateCrimesAgainstProperty":{
+            "IndexValuesUpto10":{
+               "Current":"10",
+               "Past":"10",
+               "Forecasted":"10"
+            },
+            "IndexValuesUpto2000":{
+               "Current":"1380",
+               "Past":"1578",
+               "Forecasted":"1341"
+            }
+         }
+      },
+      "Ppc":{
+         "Ppc":"2       ",
+         "FireProtectionArea":"DES MOINES FPSA               ",
+         "WaterSupplyType":"Hydrant",
+         "RespondingFireStation":"DES MOINES FS 1               ",
+         "DriveDistanceToRespondingFireStation":"1 mile or less"
+      },
+      "OshaInpectionsAndViolations":{
+         "InspectionsInLast10Years":1,
+         "ViolationsInLast10Years":3,
+         "OshaResults":[
+            {
+               "InspectionNumber":"316300763",
+               "OpenDate":"2012-01-17",
+               "InspectionType":{
+                  "Code":"B",
+                  "Description":"Complaint"
+               },
+               "CaseCloseDate":"2012-03-01",
+               "Violations":[
+                  {
+                     "ViolationType":{
+                        "Code":"S",
+                        "Description":"Serious"
+                     },
+                     "StandardCited":"19100305 A01    I - Wiring methods, components, and equipment for general use.",
+                     "IssuanceDate":"2012-02-10"
+                  },
+                  {
+                     "ViolationType":{
+                        "Code":"S",
+                        "Description":"Serious"
+                     },
+                     "StandardCited":"19100303 G02    I - General.",
+                     "IssuanceDate":"2012-02-10"
+                  },
+                  {
+                     "ViolationType":{
+                        "Code":"O",
+                        "Description":"Other"
+                     },
+                     "StandardCited":"19101200 H03 IV – Hazard Communication.",
+                     "IssuanceDate":"2012-02-10"
+                  }
+               ]
+            }
+         ]
+      },
+      "RoofCoverage":"Unknown",
+      "RoofCovering":"Unknown",
+      "ManufacturingPercentOfArea":0.0,
+      "HabitationalPercentOfArea":0.0,
+      "Vacancies":{
+         "NumberOfOccupancies":0,
+         "PercentOfArea":0.0,
+         "Hazards":false
+      },
+      "RiskId":"142100042500",
+      "FeinNumber":null,
+      "DbaName":null,
+      "SprinklerCreditValue":"No credit",
+      "TotalSalesVolume":null
+   }
+}
