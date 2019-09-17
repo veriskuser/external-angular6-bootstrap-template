@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="editModeBar" *ngIf="editMode">
+	<button class="float-right btn btn-default">Cancel</button>
+	<button class="float-right btn btn-primary">Save</button>
+</div>
+<div class="actionBar">
+	<button class="float-right btn btn-default" id="edit" (click)="_editFPA()">Edit FPA</button>
+</div>
+<div #gmap id="gmap"></div>

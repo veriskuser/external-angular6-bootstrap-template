@@ -1,0 +1,5 @@
+#gmap { width:100%;height:800px; }
+.actionBar, .editModeBar { width: 100%; position: absolute; top:0px; padding: 15px; background-color: #ff6e6e; z-index: 5; }
+.actionBar .btn, .editModeBar .btn { margin-right: 10px; }
+.actionBar { z-index: 2; background-color: #ababab; }
+.editModeBar { z-index: 6; background-color: #ff6e6e; }
