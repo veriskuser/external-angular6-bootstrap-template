@@ -1,0 +1,31 @@
+div:not(.sidebar-content) {
+  display: flex;
+
+  i {
+    margin: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .sidebar-content {
+    margin: 40px 10px 10px 10px;
+  }
+
+  ng-sidebar-container {
+    height: calc(100vh - 116px);
+    margin-top: 56px;
+    width: 300px;
+
+    >>> aside {
+      width: 100%;
+      background-color: #f7f9fb;
+    }
+  }
+
+  button {
+    margin-top: 100px;
+    z-index: 999;
+    position: absolute;
+  }
+}
