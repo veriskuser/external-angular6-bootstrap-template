@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <ng-sidebar-container>
+      <ng-sidebar [(opened)]="_opened">
+        <i class="va-icon-close float-right" (click)="_toggleSidebar()"></i>
+        <div class="sidebar-content">
+          <p>Sidebar contents</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+        </div>
+      </ng-sidebar>
+    </ng-sidebar-container>
+  </div>
+  <button class="btn btn-primary" #button (click)="_toggleSidebar()">
+    Click here to reveal sidebar
+  </button>
+</div>

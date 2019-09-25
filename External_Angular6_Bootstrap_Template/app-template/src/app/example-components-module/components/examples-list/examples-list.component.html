@@ -1,0 +1,26 @@
+<main>
+  <div class="container">
+    <h3>Component Examples List</h3>
+    <br />
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Live Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let e of exampleMetadataArray">
+          <td>{{ e.name }}</td>
+          <td>
+            {{ e.desc }}
+          </td>
+          <td>
+            <a routerLink="/examples/{{ e.name.toLowerCase() }}">View Demo</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
