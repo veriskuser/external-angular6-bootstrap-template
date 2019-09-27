@@ -2,7 +2,7 @@
 // Define the `interactiveApp` module
 var app = angular.module('streetViewApp', ['ui.bootstrap']);
 
-app.constant('googleApikey', 'AIzaSyDocE2c2EtTdqz1KHLQka_GYEA9pHhnmgY')
+app.constant('googleApikey', '<INSERT KEY HERE>')
    .constant('melissaApi', 'http://underwritingapit-internal-scrubber.iso.com')
   // .constant('melissaApi', 'http://internal-scrub-api-prod1-2012086553.us-east-1.elb.amazonaws.com')
    .constant('path', window.location.href);
