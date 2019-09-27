@@ -2,24 +2,46 @@ div:not(.sidebar-content) {
   display: flex;
 
   i {
-    margin: 10px;
     font-size: 1.3em;
     cursor: pointer;
-    padding: 10px;
+    padding: 7px;
   }
 
   .sidebar-content {
-    margin: 40px 10px 10px 10px;
+    margin-top: 30px;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding: 10px 15px 10px 15px;
+        cursor: pointer;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &:hover {
+          background-color: #3fa9f5;
+        }
+      }
+    }
   }
 
   ng-sidebar-container {
     height: calc(100vh - 116px);
     margin-top: 56px;
-    width: 300px;
+    width: 235px;
 
     >>> aside {
       width: 100%;
-      background-color: #f7f9fb;
+      background-color: #3d3d3d;
+      color: #ffffff;
     }
   }
 

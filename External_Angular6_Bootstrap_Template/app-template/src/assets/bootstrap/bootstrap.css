@@ -3775,10 +3775,6 @@ tbody.collapse.show {
   justify-content: space-between;
 }
 
-.navbar.fixed-top {
-  box-shadow: #adb5bd 0 2px 2px;
-}
-
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
